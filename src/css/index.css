@@ -4,14 +4,21 @@
   font-family: "Nunito", serif;
   margin: 0;
   padding: 0;
-  background-color: #FFFFFD;
+}
+p {
+  font-size: 2.5rem;
+}
+h2 
+{
+  font-size: 4rem;
 }
 
 .header 
 {
-  margin-top:2rem;
+  margin: 1rem auto;
+  width: 80%;
   display:flex;
-  justify-content:space-between;
+  justify-content:center;
 }
 
 .header-elem
@@ -30,10 +37,36 @@
 .main-image 
 {
   display: block;
-  margin-top: 4rem;
   margin-left: auto;
   margin-right: auto;
+  width: 100%;
+}
+
+.title 
+{
+  font-family: "EB Garamond", serif;
+  font-size: 12rem;
+  font-weight: 400;
+  display:flex;
+  justify-content:center;
+}
+.fore-image 
+{
+  background-color: #9a9997;
   width: 80%;
+  margin: 0 auto;
+}
+
+.game-container
+{
+  display: flex;
+  padding: 12rem 4rem;
+  background-color: #9a9997;
+}
+
+.game-text
+{
+  margin-left: 3rem;
 }
 
 .list-group 
@@ -77,16 +110,16 @@
   will-change: transform;
 }
 
-.button-27:disabled {
+.button:disabled {
   pointer-events: none;
 }
 
-.button-27:hover {
+.button:hover {
   box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
   transform: translateY(-2px);
 }
 
-.button-27:active {
+.button:active {
   box-shadow: none;
   transform: translateY(0);
 }

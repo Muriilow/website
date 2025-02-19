@@ -5,7 +5,6 @@ function Header()
   return (
     <>
     <header className="header">
-    <img width="50px" src="../public/cat.png"></img>
       <nav>
         <a href="" className="header-elem">Games</a>
         <a href="" className="header-elem">Art</a>
