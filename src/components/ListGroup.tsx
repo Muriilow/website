@@ -3,12 +3,12 @@ import { useState } from "react";
 interface ListProps 
 {
   items: string[];
-  heading: string;
+  classType: string;
   onSelectItem: (item: string) => void; //property
 }
 
 
-function ListGroup({ items, heading, onSelectItem }: ListProps)
+function ListGroup({ items, classType, onSelectItem }: ListProps)
 {
 
   //Hook
@@ -16,8 +16,7 @@ function ListGroup({ items, heading, onSelectItem }: ListProps)
 
   return( 
   <>
-    <h1>{heading}</h1>
-    <ul className="list-group">
+    <ul className={classType}>
 
       {
         items.map((item, index) => ( 

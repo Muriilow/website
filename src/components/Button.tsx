@@ -1,16 +1,15 @@
 interface ButtonProps 
 {
-  classType?: 'primary' | 'secondary' | 'dark';
   children: string;
   onClick: () => null;
 }
 
-function Button({ classType = 'primary', children, onClick }:ButtonProps)
+function Button({ children, onClick }:ButtonProps)
 {
  return (
           <button
           type="button" 
-          className={'btn btn-' + classType}
+          className="button"
           onClick={onClick}>
 
           {children}
